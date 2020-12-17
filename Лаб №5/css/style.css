@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background: url("../resource/body.jpg");
+    background-size: cover;
+    font-family: cambria, serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 10px 20px 10px 20px;
+    flex: 1;
+    width: 1485px;
+}
+
+header {
+    margin: 20px 20px 10px 20px;
+    width: 1480px;
+    background: url("../resource/header.jpg");
+    background-size: 1480px 180px ;
+    height: 180px;
+    border: 3px solid blue;
+    z-index: 1;
+}
+
+.main-content {
+    display: flex;
+}
+
+.content-wrap {
+    padding: 20px;
+    margin: 0 20px 10px 0px;
+    background: bisque;
+    width: calc(100% - 300px);
+}
+
+nav {
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: bisque;
+    border: 2px solid cadetblue;
+    width: 150px;
+}
+
+aside {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: bisque;
+    border: 2px solid cadetblue;
+    width: 150px;
+}
+
+footer {
+    padding: 20px;
+    background: bisque;
+    margin: 10px 20px 20px 20px;
+    width: 1450px;
+    text-align: center;
+}
+
+input {
+    font-size: 16px;
+    font-family: cambria, serif;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input[type=text] {
+    width: 200px;
+}
+
+select {
+    margin: 5px;
+    font-size: 16px;
+    font-family: cambria, serif;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+button {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: cambria, serif;
+    outline: none;
+}
+
+button.gray {
+    color: white;
+    background: darkgray;
+    border: 1px gray solid;
+}
+
+button.gray:hover {
+    border: 1px gray solid;
+    background: lightslategray;
+}
+
+button.red {
+    background-color: #AF301F;
+    border: 1px solid #DD4B39;
+}
+
+button.red:hover {
+    background-color: #EB5200;
+    border: 1px solid #AF301F;
+}
+
+button.orange {
+    background-color: orange;
+    border: 1px solid #FB8F3D;
+}
+
+button.orange:hover {
+    background-color: #D14836;
+    border: 1px solid #EB5200;
+}

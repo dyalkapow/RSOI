@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица случайных чисел</title>
+
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <h2>Таблица случайных чисел</h2>
+</header>
+
+<main>
+
+
+    <br>
+    <form action="/getTableSortedASC">
+        <button id="getTableSortedASC">Сортировать по возрастанию</button>
+    </form>
+    <br>
+    <form action="/getTableSortedDESC">
+        <button id="getTableSortedDESC">Сортировать по убыванию</button>
+    </form>
+    <br>
+
+
+    <form action="/" method="post">
+        <button id="getTable">Показать таблицу с колвом цифр</button>
+        <br>
+
+        <label for="numberAfterDotCount">Выберите количество цифр после запятой: </label>
+        <select id="numberAfterDotCount" name="numberAfterDotCount" required>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </form>
+
+
+    <br>
+    <table></table>
+
+</main>
+
+</body>
+</html>

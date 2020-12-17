@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/jquery/jquery-3.4.1.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+
+<header>
+
+</header>
+
+<main>
+    <form id="forma" action=" " onsubmit="return false;">
+        <h2>Заполните форму:</h2>
+
+        <div class="fieldTool">
+            <label class="labelTool" for="name">Имя: </label>
+            <input id="name" type="text" placeholder="имя" readonly>
+        </div>
+
+        <div class="fieldTool">
+            <label class="labelTool" for="address"> Адрес:</label>
+            <input id="address" type="text" placeholder="адрес" readonly>
+        </div>
+
+        <div class="fieldTool">
+            <label class="labelTool" for="age">Возраст: </label>
+            <input id="age" type="number" placeholder="возраст" readonly>
+        </div>
+
+        <div class="fieldTool">
+            <label class="labelTool" for="position">Должность:</label>
+            <input id="position" type="text" placeholder="должность" readonly>
+        </div>
+
+
+        <div class="fieldTool" id="addressBlock">
+            <label class="labelTool" for="fontSize14">размер шрифта 14:</label>
+            <input id="fontSize14" type="radio" value="14" name="fontSize">
+            <br>
+            <label class="labelTool" for="fontSize15"> размер шрифта 15:</label>
+            <input id="fontSize15" type="radio" value="15" name="fontSize">
+            <br>
+            <label class="labelTool" for="fontSize16"> размер шрифта 16:</label>
+            <input id="fontSize16" type="radio" value="16" name="fontSize">
+        </div>
+
+        <button id="loadXml" class="buttons" type="button">Загрузить данные из XML</button>
+        <button id="loadGif" class="buttons" type="button">Показать gif</button>
+        <br>
+        <button id="showNewInfo" class="buttons" type="button">Показать информацию в блоке</button>
+        <button id="hideNewInfo" class="buttons" type="button">Скрыть информацию в блоке</button>
+        <br>
+        <button id="makeInvisible" class="buttons" type="button">Сделать поля невидимыми</button>
+        <button id="makeVisible" class="buttons" type="button">Сделать поля видимыми</button>
+    </form>
+
+    <br><br>
+
+    <div id="gifResult"></div>
+
+
+    <div id="textWithPicture">
+        <div id="picture"></div>
+        <div id="text"></div>
+    </div>
+</main>
+
+
+<footer>
+
+</footer>
+
+</body>
+</html>

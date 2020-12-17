@@ -1,0 +1,94 @@
+.container1 {
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background: aquamarine;
+    border-top: 30px solid aquamarine;
+    border-bottom: 30px solid aquamarine;
+}
+
+.header1{
+    float: left;
+    margin-left: 2%;
+    font-size: 40px;
+    color: crimson;
+}
+.header2{
+    font-size: 35px;
+    color: black;
+    padding-left:3%;
+}
+.container2{
+    width: 95.8%;
+    background: azure;
+    margin-left: 2%;
+    background: linear-gradient(to bottom,gold,azure);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.trap{
+    margin-left: 14%;
+    width: 80%;
+    border-bottom: 70px solid gold;
+    border-left: 40.4px solid transparent;
+}
+
+.paragraph1{
+    font-size: 25px;
+    color: blueviolet;
+    padding:3%;
+}
+
+.paragraph2{
+    font-size: 25px;
+    color: brown;
+    padding-left:3%;
+}
+
+.svg-wrapper {
+    padding: 3%;
+    position: relative;
+}
+
+.blinking-text {
+    animation: blink 2s linear infinite;
+    position: absolute;
+    left: 13%;
+    top: 27%;
+    font-size: 6rem;
+    font-family: "BankGothic Lt BT", sans-serif;
+    text-align: center;
+    color: burlywood;
+    font-weight: normal;
+    text-shadow: 0 5px rgba(0, 9, 83, 0.65), 0 5px #eaebff;
+}
+
+@keyframes blink {
+    50% { color: rgba(23, 0, 28, 0.71); }
+    51% { color: rgba(79, 137, 157, 0.4); }
+    100% { color: rgba(97, 84, 146, 0.35); }
+}
+
+.fixedBlock {
+    position: fixed;
+    right:5%;
+    font-size: xx-large;
+}
+
+li:before {
+    content: url(../resource/длясписка.jpg); /* Добавляем желаемый символ перед элементом списка */
+}
+li:after {
+    content: url(../resource/длясписка.jpg); /* Добавляем желаемый символ перед элементом списка */
+}
+ul.list{
+    list-style-type: none;
+    margin-left: 4%;
+    padding-bottom: 2%;
+}
+
+*{
+    margin:0;
+    padding:0;
+}

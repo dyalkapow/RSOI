@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background: url("../resources/img/background.jpg");
+    font-family: cambria, serif;
+    font-size: 16px;
+    color: #240152;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1200px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+table {
+    align-content: center;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+
+.buttons {
+    margin: 20px 5px;
+    padding: 4px;
+    border: 1px solid #7c7c7c;
+    background-color: rgb(229, 229, 229);
+}
+
+.buttons:hover {
+    cursor: pointer;
+    border: 2px solid #545454;
+}
+
+
+input {
+    font-size: 16px;
+    font-family: cambria, serif;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+input[type=text], input[type=number] {
+    width: 200px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    width: 30%;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 600px;
+    margin-left: 35%;
+    background-color: rgba(240, 248, 255, 0.9);
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(160, 160, 250, 0.5);
+}
+
+form > div {
+    text-align: left;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+div > input {
+    text-align: center;
+}
+
+
+td, th {
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+}
+
+.idDel {
+    margin: 30px auto 0;
+}
+
+#idRow {
+    width: 55px;
+}
+
+#field {
+    margin-top: 10px;
+    width: 200px;
+}
+
+/*Some fields*/
+.fieldTool {
+    clear: both;
+    text-align: right;
+}
+
+.labelTool {
+    float: left;
+}
+
+label .newField {
+    margin-left: 375px;
+}
+

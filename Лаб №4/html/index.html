@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Allamyrat</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer type="text/javascript" src="../js/script.js"></script>
+</head>
+<body background="../resource/a.jpg">
+    <div id="container2">
+        <select id="list" name="list" required>
+            <option value="Красный">Красный</option>
+            <option value="Черный">Черный</option>
+            <option value="Зеленый">Зеленый</option>
+            <option value="Оранжевый">Оранжевый</option>
+            <option value="Фиолетовый">Фиолетовый</option>
+        </select><br>
+        <input type="text" id="addValue" name="addValue" required><br>
+        <button class="button" type="button" id="addButton" onclick="addElement()">Добавить</button>
+        <button class="button" type="button" id="deleteButton" onclick="deleteElement()">Убрать элемент</button>
+        <button class="button" type="button" id="showButton" onclick="show()">Просмотреть удаленные</button>
+    </div>
+    <div id="tableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <td>Пор. номер</td>
+                    <td>Значение</td>
+                </tr>
+            </thead>
+            <tbody id="dataListTable">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

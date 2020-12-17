@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таблица</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<header></header>
+<body onload="load_table()">
+<div class="container">
+    <div class="main-content">
+        <div class="content-wrap" style="text-align: center">
+            <h1 align="center">Добрый день!</h1>
+            <h3 align="center">Добро пожаловать на страницу магазина компьютерной техники</h3>
+            <form method="post" onsubmit="return add_data()">
+                <div id="mainInfo">
+                    <input type="text" placeholder="Название устройства" id="deviceName" name="deviceName" required pattern="[А-яёЁA-z0-9 ][А-яёЁA-z0-9 -]{1,49}"><br>
+                    <label for="receiptDate">Дата поступления</label><br>
+                    <input type="date" id="receiptDate" name="receiptDate" required><br>
+                    <label for="deliveryType">Вид доставки</label><br>
+                    <select id="deliveryType" name="deliveryType">
+                        <option value="Самовывоз">Самовывоз</option>
+                        <option value="Курьер">Курьер</option>
+                    </select><br>
+                    <input type="text" placeholder="Реквизиты" id="requisites" name="requisites" required><br>
+                    <button class="orange" type="button" id="addInfo" onclick="add_additional_fields()">Доп. информация</button>
+                </div><br>
+                <button class="gray" type="submit" name="submit">Отправить</button>
+                <button type="reset" name="reset">Сбросить</button><br><br>
+            </form>
+            <label for="storeId">Удалить запись с ID</label>
+            <select id="storeId" name="storeId">
+            </select>
+            <button class="red" type="button" name="submit" onclick="delete_store(); load_table()">Удалить</button><br><br>
+            <button class="orange" type="button" name="submit" onclick="get_sorted_order()">Список заказов</button>
+            <select id="deliveryTypeSearch" name="deliveryTypeSearch">
+                <option value="Самовывоз">Самовывоз</option>
+                <option value="Курьер">Курьер</option>
+            </select><br>
+            <br><br>
+            <table id="storeTable" border="1" cellpadding="5" style="border-collapse: collapse; width: 100%">
+                <tr id="storeProperties">
+                    <th>ID</th>
+                    <th>Название устройства</th>
+                    <th>Дата поставки</th>
+                    <th>Вид доставки</th>
+                    <th>Реквизиты</th>
+                </tr>
+            </table>
+        </div>
+        <nav>
+            <h2>Навигация</h2>
+            <a href="index.html">Главная</a><br>
+        </nav>
+        <aside>
+            <h2>Здесь может быть Ваша реклама</h2>
+        </aside>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../js/code.js"></script>
+<footer>2019 sol production</footer>
+</html>

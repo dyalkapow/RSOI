@@ -1,0 +1,40 @@
+html
+    head
+        style
+            include ../css/style.css
+        title= title
+    header
+    body
+        div(class='container')
+            div(class='main-content')
+                nav
+                    h2= 'Навигация'
+                    a(href='/')= 'Главная'
+                    br
+                    br
+                    a(href='/add-flash')= 'Новая флешка'
+                div(class='content-wrap')
+                    h2= 'Добавление флешки в каталог'
+                    form(action='/add-flash-post' method='post')
+                        label= 'Введите производителя'
+                        br
+                        input(type="text" placeholder="производитель" id="flashMaker" name="flashMaker" required)
+                        br
+                        label= 'Введите объем памяти'
+                        br
+                        input(type='number' min="1" max="50" placeholder="объем памяти" id="flashMemory" name="flashMemory" required)
+                        br
+                        label= 'Введите срок гарантии'
+                        br
+                        input(type="number" min="6" max="36" placeholder="срок гарантии" id="flashGuarantee" name="flashGuarantee" required)
+                        br
+                        label= 'Введите количество'
+                        br
+                        input(type='number' min="1" max="1000" placeholder="количество" id="flashCount" name="flashCount" required)
+                        br
+                        button= 'Отправить'
+                aside
+                    h2= 'Здесь может быть Ваша реклама'
+    footer= '2019 © 1+1 media'
+
+

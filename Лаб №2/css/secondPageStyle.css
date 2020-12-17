@@ -1,0 +1,106 @@
+.container1 {
+    background: radial-gradient(#55ddff,#55ddff);
+    width: 7%;
+    height: 60px;
+    margin-left: 15%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background: radial-gradient(#55ddff,#55ddff);
+    box-shadow: 5px 5px 0 0 rgba(0,0,0,0.1);
+}
+
+.header1{
+    margin-left: 12%;
+    font-size: 25px;
+    color: crimson;
+    margin-top: -2%;
+}
+
+.mainHeader{
+    margin-left: 22.3%;
+    padding-top: 3%;
+}
+.picture1{
+    height: 58px;
+    width: 62.7%;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.header2{
+    padding-top: 1.5%;
+    margin-left: 2%;
+}
+
+.header3{
+    padding-top: 1.5%;
+    margin-left: 2%;
+}
+
+.paragraph1{
+    padding-top: 1.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.paragraph2{
+    padding-top: 1.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+table{
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+    margin-left: 2%;
+    width: 45%;
+    height: 250px;
+    border-collapse: separate; /* Убираем двойные линии между ячейками */
+    border-spacing: 3px;
+}
+
+table:hover {
+    color: #fff;
+}
+
+.td1{
+    width: 20%;
+    background-color: #a583a0;
+}
+
+.td2{
+    background-color: deepskyblue;
+}
+
+.td3{
+    background-color: royalblue;
+    text-align: center;
+}
+
+.td4{
+    background-color: orange;
+    text-align: center;
+}
+
+.textInput{
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 45%;
+    font-family:"Times New Roman";
+    color:black;
+}
+
+/* .textInput:focus{
+    color:red;
+    font-family:"Elephant";
+} */
+
+*{
+    margin:0;
+    padding:0;
+}

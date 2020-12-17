@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    /*background: url("./img/background.png");*/
+  /* background: url("../resources/img/background.png");*/
+
+    font-family: cambria, serif;
+    font-size: 16px;
+    color: #240152;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 10px 20px 10px 20px;
+    flex: 1;
+}
+
+.main-content {
+    display: flex;
+}
+
+.content-wrap {
+    padding: 20px;
+    margin: 0 20px 10px 20px;
+    background: #faf2f3;
+    width: calc(100% - 300px);
+}
+
+nav {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #faf2f3;
+    border: 2px solid black;
+    width: 150px;
+}
+
+aside {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #faf2f3;
+    border: 2px solid black;
+    width: 150px;
+}
+
+footer {
+    padding: 20px;
+    background: #D1D1D1;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+
+a {
+    font-size: 18px;
+}
+
+a:link {
+    color: #497DDD;
+    border-bottom: 1px dashed;
+}
+
+a:visited {
+    color: #EF7D55;
+}
+
+a:hover {
+    color: #154088;
+    border-bottom: .07em solid;
+}
+
+a:active {
+    color: #497DDD;
+    border-bottom: 1px dashed;
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 0;
+    empty-cells: hide;
+}
+
+td {
+    text-align: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid red;
+    transition: all 0.5s linear;
+    width: 90px;
+}
+
+td:hover {
+    background: #503c64;
+    font-weight: bold;
+    color: white;
+}
+
+
+input {
+    width: 30%;
+    font-size: 16px;
+    font-family: cambria, serif;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+input[type=text], input[type=number] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    width: 45%;
+}
+
+
+button {
+    width: 30%;
+    margin: 20px 5px;
+    padding: 4px;
+    border: 1px solid #7c7c7c;
+    background-color: rgb(229, 229, 229);
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid #545454;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: -webkit-linear-gradient(top, #D74736, #AD2719);
+    background: -moz-linear-gradient(top, #D74736, #AD2719);
+    background: -ms-linear-gradient(top, #D74736, #AD2719);
+}
+

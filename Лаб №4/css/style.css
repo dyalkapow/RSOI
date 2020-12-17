@@ -1,0 +1,70 @@
+body{
+    background-size: cover;
+}
+
+#container2 {
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: cambria, serif;
+    border-radius: 15px;
+    outline: none;
+    color: aliceblue;
+    background: coral;
+    border: 1px coral solid;
+    box-shadow: inset 0 1px 0 chocolate;
+}
+
+select {
+    font-size: 16px;
+    font-family: cambria, serif;
+    border-radius: 4px;
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+#addValue{
+    margin-top: 10px;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+}
+
+
+#tableContainer {
+    display: none;
+    margin-top: 50px;
+    color: #fff;
+    background-color: #000;
+    width: 10%;
+}
+
+.show {
+    display: block!important;
+}
+
+table {
+    width: 100%;
+}
+
+table thead {
+    background-color: beige;
+    color: chocolate;
+}
+
+table tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+table tbody tr:last-child {
+    border-bottom: 0;
+}

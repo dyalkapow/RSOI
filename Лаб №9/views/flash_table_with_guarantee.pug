@@ -1,0 +1,48 @@
+html
+    head
+        style
+            include ../css/style.css
+        title= title
+    header
+    body
+        div(class='container')
+            div(class='main-content')
+                nav
+                    h2= 'Навигация'
+                    a(href='/')= 'Главная'
+                    br
+                    br
+                    a(href='/add-flash')= 'Новый предмет'
+                    br
+                    br
+                    a(href='/flashes-with-guarantee')= 'Информация о флешках по сроку гарантии'
+                div(class='content-wrap')
+                    h1(align='center')= 'Поиск по сроку гарантии'
+                    form(action='/flashes-with-guarantee-get' method='get')
+                        label= 'Введите срок гарантии'
+                        br
+                        input(type="number" min="6" max="36" placeholder="срок гарантии" id="flashGuarantee" name="flashGuarantee" required)
+                        br
+                        button= 'Показать'
+                        br
+
+                    table(border="1" style="border-collapse: collapse" cellpadding="5")
+                        tr
+                            th= 'Производитель'
+                            th= 'Объем памяти'
+                            th= 'Срок гарантии'
+                            th= 'Количество'
+                            th= 'Изменить'
+                        - for (let index = 0; index < flashes.length; index++)
+                             tr
+                                td= flashes[index].flashMaker
+                                td= flashes[index].flashMemory
+                                td= flashes[index].flashGuarantee
+                                td= flashes[index].flashCount
+                                td
+                                    a(href='/edit-flash?_id=' + flashes[index]._id)= 'Изменить'
+
+                    br
+                aside
+                    h2= 'Здесь может быть Ваша реклама'
+    footer= '2019 © 1+1 media'
